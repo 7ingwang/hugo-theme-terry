@@ -1,0 +1,13 @@
+---
+enable: true
+title: 技能标签
+skill:
+  - title: HTML
+    percent: 95
+  - title: CSS
+    percent: 90
+  - title: Bootstrap
+    percent: 85
+
+
+ 

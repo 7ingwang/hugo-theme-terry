@@ -1,0 +1,9 @@
+{{ with .Site.Data.profileSection }}
+{{ if .enable }}
+  <section>
+    <h1>{{ .topTitle }}<sup>{{ .supText }}</sup><span>{{ .subTitle}}</span></h1>
+    {{ .title }}
+    {{ .summary | markdownify }}
+  </section>  
+{{ end }}
+{{ end }}

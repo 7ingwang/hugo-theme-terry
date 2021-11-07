@@ -1,0 +1,7 @@
+{{ with .Site.Data.objectiveSection }}
+{{ if .enable }}
+  <section id="objectiveSection">
+    <h2 class="title">{{ .title }}<span>{{ .summary }}</span></h2>
+  </section> 
+{{ end }}
+{{ end }}

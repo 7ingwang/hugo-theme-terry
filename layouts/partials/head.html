@@ -1,0 +1,9 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5">
+  <meta name="author" content="{{ site.Params.author }}">
+  <meta name="description" content="{{ with .Params.description }} {{.}} {{else}} {{ with site.Params.description }} {{.}} {{end}} {{end}}">
+  <title>{{ .Title }}</title>
+  <link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
+  {{ partialCached "style.html" . }}
+</head>
