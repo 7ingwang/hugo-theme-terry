@@ -3,11 +3,23 @@ enable: true
 title: 技能标签
 skill:
   - title: HTML
-    percent: 95
+    percent: 85
   - title: CSS
     percent: 90
   - title: Bootstrap
-    percent: 85
+    percent: 80
+  - title: Augular
+    percent: 65
+  - title: Vue
+    percent: 75
+  - title: React
+    percent: 60
+  - title: WordPress
+    percent: 80
+  - title: Hugo
+    percent: 75
+
+  
 
 
  

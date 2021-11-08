@@ -1,8 +1,9 @@
-{{ with .Site.Data.contactBox }}
+{{ with .Site.Data.contactSection }}
 {{ if .enable }}
-  <div class="contactBox">
+  <section id="contact">
+    <h2>{{ .title }}</h2>
     <p><b>{{ .tel }}</b></p>
     <p>{{ .email | markdownify }}</p>
-  </div> 
+  </section> 
 {{ end }}
 {{ end }}

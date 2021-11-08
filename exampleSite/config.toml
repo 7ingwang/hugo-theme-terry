@@ -1,5 +1,14 @@
 title = "王珽 / Web前端开发工程师 10+"
-baseURL = "https://example.com"
+baseURL = "https://terry.wang"
 languageCode = "en-us"
 theme = "terry"
+
+############################## Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
     
