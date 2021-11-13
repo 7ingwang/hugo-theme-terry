@@ -2,10 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://terry.wang/demo/</loc>
+    <lastmod>2021-11-12T23:55:15+08:00</lastmod>
+  </url><url>
+    <loc>https://terry.wang/</loc>
+    <lastmod>2021-11-12T23:55:15+08:00</lastmod>
+  </url><url>
+    <loc>https://terry.wang/fe/</loc>
+    <lastmod>2021-11-12T21:47:29+08:00</lastmod>
+  </url><url>
     <loc>https://terry.wang/categories/</loc>
   </url><url>
     <loc>https://terry.wang/tags/</loc>
-  </url><url>
-    <loc>https://terry.wang/</loc>
   </url>
 </urlset>

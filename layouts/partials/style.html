@@ -7,6 +7,14 @@
 {{ $styles = $styles | append (resources.Get .link) }}
 {{ end }}
 {{ end }}
+
+{{ $styles := resources.Get "css/icons.css" | minify }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+{{ $styles := resources.Get "css/style.css" | minify }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
 {{ $styles := $styles | append (resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify) }}
+
 {{ $styles := $styles | resources.Concat "/css/vendor.css" | minify | fingerprint "sha512" }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">

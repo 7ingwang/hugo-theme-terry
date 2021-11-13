@@ -1,10 +1,13 @@
 html{ font-size: 16px;
   body{ padding-bottom: 2rem; line-height: 1.6;}
 }
+
 section{ position: relative; padding: 1rem 0;
   h2{ margin-bottom: 1rem; font-size: 1.5rem;}
   p{ font-size: .875rem;}
 }
+
+// for fe resume page
 
 #profile{ padding: 5rem 0 2rem;
   h1{ position: relative; font-size: 2rem;
@@ -32,4 +35,11 @@ section{ position: relative; padding: 1rem 0;
   h3{ font-size: .875rem;}
 }
 
-
+// for demo page
+#demo{ line-height: 2;
+  h2{ display: block; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd;}
+  h6, blockquote { margin-bottom: 0;}
+  p{ margin-bottom: 1rem;
+    a{ display: inline-block; margin-right: 1rem;}
+  }
+}
