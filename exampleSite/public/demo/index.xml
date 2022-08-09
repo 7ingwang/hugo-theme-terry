@@ -2,10 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Demo on Terry.Wang</title>
-    <link>https://terry.wang/demo/</link>
+    <link>http://terry.wang/demo/</link>
     <description>Recent content in Demo on Terry.Wang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 12 Nov 2021 23:55:15 +0800</lastBuildDate><atom:link href="https://terry.wang/demo/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://terry.wang/demo/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
