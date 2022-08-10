@@ -1,5 +1,12 @@
 {{define "main"}}
 <div class="container">
-  {{ partial "demo.html" . }}
+  {{ with .Site.Data.demoList }}
+    {{ if .enable }}
+      <section id="demo">
+        <h2>{{ .title }}</h2>
+        <p>{{ .summary | markdownify }}</p>
+      </section> 
+    {{ end }}
+  {{ end }}
 </div>
 {{end}}

@@ -1,0 +1,75 @@
+{{ define "main"}}
+<div class="container-fluid wt">
+  {{ with .Site.Data.wt.brief }}
+    {{ if .enable }}
+      <section id="profile">
+        <h1>{{ .name }}<small>{{ .ting }}</small></h1>
+        <p>{{ .profile | markdownify }}</p>
+      </section> 
+      <section id="contact">
+        <p>{{ .tel }}</p>
+        <p>{{ .mail }}</p>
+      </section>
+      <section id="objective">
+        <h2>{{ .objectiveLabel }}</h2>
+        <p>{{ .objective | markdownify }}</p>
+      </section>
+      <section id="advantage">
+        <h2>{{ .advantageLabel }}</h2>
+        <div>{{ .advantage | markdownify }}</div>
+      </section>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Site.Data.wt.experience }}
+    {{ if .enable }}
+    <section id="experience">
+      <h2>{{ .title }}</h2>
+      {{ range .experience }}
+      <div class="experience">
+        <h5><span class="period">{{ .period }}</span><span class="employer">{{ .employer }}</span><span class="job">{{ .job }}</span></h5>
+        <p>{{ .content | markdownify }}</p>
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Site.Data.wt.projects }}
+    {{ if .enable }}
+    <section id="projects">
+      <h2>{{ .title }}</h2>
+      {{ range .project }}
+      <div class="project">
+        <h5>{{ .title }}<small>{{ .date }}</small></h5>
+        <p>{{ .summary | markdownify }}</p>
+        <img src="{{ .image | relURL }}" alt="{{ .title }}">
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Site.Data.wt.showcase }}
+    {{ if .enable }}
+    <section id="showcase">
+      <h2>{{ .title }}</h2>
+      {{ range .showcase }}
+      <div class="showcase">
+        <img src="{{ .image | relURL }}" alt="{{ .title }}">
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Site.Data.wt.thanks }}
+    {{ if .enable }}
+    <section id="thanks">
+      <h2>{{ .title }}</h2>
+    </section>
+    {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}
